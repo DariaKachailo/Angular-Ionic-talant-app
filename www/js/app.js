@@ -44,7 +44,7 @@ var talant = angular.module('starter', ['ionic'])
 	})
 
 	.state('eventmenu.profile', {
-		url: "/profiles/:profileId",
+		url: "/profile",
 		views: {
 			'menuContent': {
 				templateUrl: "templates/profile.html",
