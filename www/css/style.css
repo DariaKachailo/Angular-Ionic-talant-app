@@ -1,0 +1,323 @@
+.my_main {
+	background-color: #373d4a !important;
+	border: none;
+}
+
+.my_color {
+	color: #9D8C70 !important;
+}
+
+.menu {
+	background-color: #C0BDB8 !important;
+}
+
+.item-content {
+	background-color: #FFF8F0;
+}
+
+.title {
+	color: #9D8C70 !important;	
+}
+
+.item_bg a {
+  background-color: #C0BDB8 !important;
+}
+
+.bar-stable .button.button-clear {
+	color: #9D8C70;
+}
+
+/* Profile Page */
+
+hr {
+	margin-bottom: -1px;
+}
+
+.profile {
+	background-color: #373d4a;
+}
+
+.profile_row {
+	margin-left: 2%;
+}
+
+.profile_chat {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #9D8C70;
+}
+
+.profile_heart {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #9D8C70;	
+}
+
+.my-icon {
+	padding-top: 9px;
+	color: #373d4a;
+}
+  
+.profile_image {
+	width: 130px;
+}
+
+.profile_image_border {
+	border: 2px solid #9D8C70;
+	border-radius: 50%;
+}
+
+
+.profile_name {
+	font-size: 1.5em;
+	text-align: center;
+	padding-bottom: 10px;
+	color: #9D8C70;
+}
+
+
+.my_text {
+	color: #373d4a;
+}
+
+.my_background {
+	background-color: #E2E2E2;
+	border-color: #AFB1B6;
+	
+}
+
+.talant_number {
+	margin-left: 20px;
+}
+
+.my_like_icon {
+	font-size: 30px;
+	color: #9D8C70;
+	position: relative;
+	display: inline-block;
+}
+
+.like_number {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	color: #373d4a;
+	font-size: 30px;
+	padding-left: 10px;
+}
+
+/* Find talent Page */
+.my_background_2 {
+	background-color: #373d4a;
+}
+
+.my_item {
+	background-color: #FFF8F0 ;
+}
+
+.my_icon_2 {
+	color: #9D8C70 !important;
+}
+
+.my_icon_tomato {
+	color: #ed5038;
+}
+
+/* Message Page */
+.message_item_bg a {
+	background-color: #FFF8F0 !important;
+}
+
+/* Chat Page */
+
+.bar-footer {
+	overflow: visible !important;
+}
+
+.bar-footer textarea {
+	resize: none;
+	height: 25px;
+}
+
+.footer-btn-wrap {
+	position: relative; 
+	height: 100%; 
+	width: 50px; 
+	top: 7px;
+}
+
+.footer-btn {
+	position: absolute !important; 
+	bottom: 0;
+}
+
+img.profile-pic {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 15px;
+	border: 2px solid #9D8C70;
+}
+
+img.profile-pic.left {
+	left: 10px;
+}
+
+img.profile-pic.right {
+	right: 10px;
+}
+
+.message {
+	font-size: 14px;
+}
+
+.message-detail {
+	white-space: nowrap;
+	font-size: 14px;
+}
+
+.bar.item-input-inset .item-input-wrapper input {
+	width: 100% !important;
+}
+
+.message-wrapper {
+	position: relative;
+	background-color: #373d4a !important;
+}
+
+.message-wrapper:last-child {
+	margin-bottom: 10px;
+}
+
+.chat-bubble {
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px 18px;
+	position: relative;
+	margin: 10px;
+	max-width: 80%;
+}
+
+.chat-bubble:before {
+	content: "\00a0";
+	display: block;
+	height: 16px;
+	width: 9px;
+	position: absolute;
+	bottom: -7.5px;
+}
+
+.my_footer {
+	background-color: #0E1424 !important;
+}
+
+.chat-bubble.left {
+	background-color: #E2E2E2;
+	color: #373d4a;
+	float: left;
+	margin-left: 65px;
+}
+
+.chat-bubble.left:before {
+	background-color:#E2E2E2;
+	left: 10px;
+	transform: rotate(70deg) skew(5deg);
+}
+
+.chat-bubble.right {
+	background-color: #C0BDB8;
+	float: right;
+	margin-right: 65px;
+}
+
+.chat-bubble.right:before {
+	background-color: #C0BDB8;
+	right: 10px;
+	transform: rotate(118deg) skew(-5deg);
+}
+
+.chat-bubble.right a.autolinker {
+	color: #373d4a;
+	font-weight: bold;
+}
+
+.user-messages-top-icon {
+	font-size: 28px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -3px;
+	right: 5px;
+}
+
+.msg-header-username {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -3px;
+}
+
+
+.bold {
+	font-weight: bold;
+}
+
+.clearfix {
+	clear: both !important;
+}
+
+a.autolinker {
+	color: #3b88c3;
+	text-decoration: none;
+}
+
+.loader-center {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: stretch;
+	align-items: center;
+}
+
+.loader .ion-loading-c {
+	font-size: 64px;
+}
+
+.my_textarea {
+	width: 300px;
+	font-size: 13px;
+	padding-top: 5px;
+	background-color: rgb(255, 248, 238);
+	
+}
+
+/* Sign Up Page */
+
+.my_input {
+	width: 97% !important;
+	background-color: rgb(255, 248, 238) !important;
+	margin-top: 10px;
+}
+
+.my_label {
+	border: none;
+	margin-top: 10px;
+}
+
+.my_button {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 40px;
+	margin-left: 32%;
+	color: rgb(255, 248, 238);
+	background-color: #ed5038;
+}
+
+
+

@@ -1,0 +1,21 @@
+<ion-view view-title="Messanger" ng-controller="MessangerCtrl">
+
+      <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-ios-minus-outline my_icon_2"
+          ng-click="data.showDelete = !data.showDelete; data.showReorder = false"></button>
+     </ion-nav-buttons>
+
+	<ion-content class="my_background_2">
+
+		<ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
+			<ion-item ng-repeat="user in users" item="user" ui-sref="#/chat" class="item item-avatar item-icon-right item-remove-animate message_item_bg" >
+				<img class="profile_image_border" ng-src="{{user.image}}">
+				<h2 class="my_text">{{user.name}}</h2>
+				<i class="icon ion-ios-arrow-right my_icon_tomato"></i>
+				<ion-delete-button class="ion-ios-minus my_item" ng-click="onUserDelete(user)"></ion-delete-button>
+			</ion-item>
+
+		</ion-list>
+
+	</ion-content>
+</ion-view> 

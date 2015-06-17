@@ -1,0 +1,27 @@
+<ion-view view-title="Find talent">
+  <ion-content class="my_background_2">
+	<div class="list">
+
+		<div class="bar bar-header item-input-inset item my_main">
+			<label class="item-input-wrapper">
+				<i class="icon ion-ios-search placeholder-icon my_icon_2"></i>
+				<input type="search" placeholder="Search">
+			</label>
+			<button class="button button-clear my_color">
+				Find
+			</button>
+		</div>
+
+		<div ng-repeat="user in users">
+		    <a class="item item-avatar item-icon-right my_item" href="#" >
+				<img class="profile_image_border" ng-src="{{user.image}}">
+				<h2 class="my_text"> {{user.name}} </h2>
+				<p class="my_text"> {{user.specification}} </p>
+				<i class="icon ion-ios-arrow-right my_icon_tomato"></i>
+		    </a>
+		</div>
+
+	</div>
+	
+  </ion-content>
+</ion-view> 

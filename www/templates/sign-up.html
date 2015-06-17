@@ -1,0 +1,30 @@
+<ion-view view-title="Sign" ng-controller="SignUpCtrl">
+	<ion-content class="my_background_2">
+
+		<div class="list" name="newUser" ng-submit="SignUpCtrl.addNew(registration.$valid, user)" novalidate>
+
+			<label class="item item-input item-stacked-label my_label">
+			    <input type="text" class="my_input" placeholder=" First Name " ng-model="SignUpCtrl.user.firstName" required>
+			</label>
+			<label class="item item-input item-stacked-label my_label">
+			    <input type="text" class="my_input" placeholder=" Last Name " ng-model="SignUpCtrl.user.lastName" required>
+			</label> 
+			<label class="item item-input item-stacked-label my_label">
+			    <input type="text" class="my_input" placeholder=" Nickname " ng-model="SignUpCtrl.user.nickname" required>
+			</label>
+			<label class="item item-input item-stacked-label my_label">
+			    <input type="text" class="my_input" placeholder=" Talant " ng-model="SignUpCtrl.user.talant" required>
+			</label>
+			<label class="item item-input item-stacked-label my_label">
+			    <input type="text" class="my_input" placeholder=" Email " ng-model="SignUpCtrl.user.email" required>
+			</label>
+			<label class="item item-input item-stacked-label my_label">
+			    <input type="text" class="my_input" placeholder=" Password " ng-model="SignUpCtrl.user.password" required>
+			</label>
+
+			<button type="submit" class="btn btn-default my_button" value="Submit">Submit</button>
+
+		</div>
+
+	</ion-content>
+</ion-view> 
