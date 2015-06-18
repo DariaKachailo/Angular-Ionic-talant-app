@@ -8,7 +8,7 @@
 	<ion-content class="my_background_2">
 
 		<ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
-			<ion-item ng-repeat="user in users" item="user" ui-sref="#/chat" class="item item-avatar item-icon-right item-remove-animate message_item_bg" >
+			<ion-item ng-repeat="user in users" item="user" ui-sref="eventmenu.chat" class="item item-avatar item-icon-right item-remove-animate message_item_bg" >
 				<img class="profile_image_border" ng-src="{{user.image}}">
 				<h2 class="my_text">{{user.name}}</h2>
 				<i class="icon ion-ios-arrow-right my_icon_tomato"></i>

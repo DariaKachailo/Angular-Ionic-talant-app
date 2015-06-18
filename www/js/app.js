@@ -83,7 +83,7 @@ var talant = angular.module('starter', ['ionic'])
 	})
 
 	.state('eventmenu.chat', {
-		url: "/chat",
+		url: "/chat/:chatId",
 		views: {
 			'menuContent': {
 			templateUrl: "templates/chat.html",
