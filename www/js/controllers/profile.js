@@ -1,4 +1,4 @@
-talant.controller('profileCtrl',['$scope', '$stateParams', function($scope, $stateParams) {
+talant.controller('ProfileCtrl',['$scope', '$stateParams', function($scope, $stateParams) {
   // $scope.showForm = true;
   
   // $scope.shirtSizes = [

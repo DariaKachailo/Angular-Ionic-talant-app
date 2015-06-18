@@ -1,9 +1,8 @@
-talant.factory('MockService', ['$http', '$q',
-  function($http, $q) {
+talant.factory('MockService', ['$http', '$q', function($http, $q) {
     var me = {};
 
     me.getUserMessages = function(d) {
-      /*
+      
       var endpoint =
         'http://www.mocky.io/v2/547cf341501c337f0c9a63fd?callback=JSON_CALLBACK';
       return $http.jsonp(endpoint).then(function(response) {
@@ -12,7 +11,7 @@ talant.factory('MockService', ['$http', '$q',
         console.log('get user messages error, err: ' + JSON.stringify(
           err, null, 2));
       });
-      */
+      
       var deferred = $q.defer();
       
      setTimeout(function() {

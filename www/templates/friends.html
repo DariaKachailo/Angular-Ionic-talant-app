@@ -1,6 +1,16 @@
 <ion-view view-title="Friends">
 	<ion-content class="my_background_2">
-		<p>Friends page</p>
+		<div class="row friends_row">
 
+			<div class="col col-33" ng-repeat="friend in friends">
+				<div class="friend">
+					<a href="#" >
+						<img class="profile_image_border my_size" ng-src="{{friend.image}}">
+						<p class="friends_title"> {{friend.name}} </p>
+				    </a>
+				</div>		
+			</div>
+
+		</div>
 	</ion-content>
 </ion-view> 

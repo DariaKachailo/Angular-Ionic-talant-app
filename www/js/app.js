@@ -48,7 +48,7 @@ var talant = angular.module('starter', ['ionic'])
 		views: {
 			'menuContent': {
 				templateUrl: "templates/profile.html",
-				controller: "profileCtrl"
+				controller: "ProfileCtrl"
 			}
 		}
 	})
@@ -68,6 +68,7 @@ var talant = angular.module('starter', ['ionic'])
 		views: {
 			'menuContent': {
 			templateUrl: "templates/friends.html",
+			controller: "FriendsCtrl"
 			}
 		}
 	})

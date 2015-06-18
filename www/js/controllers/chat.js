@@ -166,23 +166,22 @@ talant.controller('ChatCtrl', ['$scope', '$rootScope', '$state', '$stateParams',
     };
     
     // I emit this event from the monospaced.elastic directive, read line 480
-    // $scope.$on('taResize', function(e, ta) {
-    //   console.log('taResize');
-    //   if (!ta) return;
+    $scope.$on('taResize', function(e, ta) {
+      console.log('taResize');
+      if (!ta) return;
       
-    //   var taHeight = ta[0].offsetHeight;
-    //   console.log('taHeight: ' + taHeight);
+      var taHeight = ta[0].offsetHeight;
+      console.log('taHeight: ' + taHeight);
       
-    //   if (!footerBar) return;
+      if (!footerBar) return;
       
-    //   var newFooterHeight = taHeight + 10;
-    //   newFooterHeight = (newFooterHeight > 44) ? newFooterHeight : 44;
+      var newFooterHeight = taHeight + 10;
+      newFooterHeight = (newFooterHeight > 44) ? newFooterHeight : 44;
       
-    //   footerBar.style.height = newFooterHeight + 'px';
-    //   scroller.style.bottom = newFooterHeight + 'px'; 
-    // });
+      footerBar.style.height = newFooterHeight + 'px';
+      scroller.style.bottom = newFooterHeight + 'px'; 
+    });
 
-// }]);
 
 
 function onProfilePicError(ele) {
@@ -193,14 +192,14 @@ function getMockMessages() {
   return {"messages":[{
       "_id":"535d625f898df4e80e2a125e",
       "text":"Ionic has changed the game for hybrid app development.",
-      "userId":"2",
+      "userId":"1",
       "date":"2014-04-27T20:02:39.082Z",
       "read":true,
       "readDate":"2014-12-01T06:27:37.944Z"
     },{
       "_id":"535f13ffee3b2a68112b9fc0",
       "text":"I like Ionic better than ice cream!",
-      "userId":"1",
+      "userId":"2",
       "date":"2014-04-29T02:52:47.706Z",
       "read":true,
       "readDate":"2014-12-01T06:27:37.944Z"

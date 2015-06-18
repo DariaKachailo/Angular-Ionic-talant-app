@@ -27,6 +27,15 @@
 	color: #9D8C70;
 }
 
+a {
+	text-decoration: none;
+}
+
+.col {
+	display: flex;
+	justify-content: center;
+}
+
 /* Profile Page */
 
 hr {
@@ -35,10 +44,6 @@ hr {
 
 .profile {
 	background-color: #373d4a;
-}
-
-.profile_row {
-	margin-left: 2%;
 }
 
 .profile_chat {
@@ -69,11 +74,20 @@ hr {
 	border-radius: 50%;
 }
 
-
 .profile_name {
 	font-size: 1.5em;
 	text-align: center;
 	padding-bottom: 10px;
+	color: #9D8C70;
+}
+
+.profile_location {
+	margin-top: 10px;
+}
+
+.profile_location_icon {
+	font-size: 14px;
+	margin-right: 2px;
 	color: #9D8C70;
 }
 
@@ -88,10 +102,6 @@ hr {
 	
 }
 
-.talant_number {
-	margin-left: 20px;
-}
-
 .my_like_icon {
 	font-size: 30px;
 	color: #9D8C70;
@@ -102,10 +112,10 @@ hr {
 .like_number {
 	position: relative;
 	display: inline-block;
-	margin: 0 auto;
 	color: #373d4a;
 	font-size: 30px;
 	padding-left: 10px;
+	margin-top: 3px;
 }
 
 /* Find talent Page */
@@ -319,5 +329,19 @@ a.autolinker {
 	background-color: #ed5038;
 }
 
+/* Friends Page */
 
+.my_size {
+	width: 80px;
+}
+
+.friends_title {
+	color: #9D8C70;
+	font-size: 12px;
+}
+
+.friends_row {
+	flex-wrap: wrap;
+	justify-content: center !important;
+}
 
