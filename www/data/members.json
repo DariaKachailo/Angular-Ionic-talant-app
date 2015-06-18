@@ -1,0 +1,75 @@
+[
+    { 
+        "memberId": "0",
+        "firstName": "Stanislav",
+        "lastName": "Dzhus",
+        "image": "img/profile-1.png",
+        "location": "Romankiv,Ukraine",
+        "talent": "Zzzzanuda",
+        "specialization": "Back off, man. I'm a blablabla."
+    },{ 
+    	"memberId": "1",
+        "firstName": "Eugene",
+        "lastName": "Slavnuj",
+        "image": "img/profile-2.png",
+        "location": "Obolon,Ukraine",
+        "talent": "DoEbuvatsja",
+        "specialization": "My talent is doebuvalsja."
+    },{
+    	"memberId": "2",
+        "firstName": "Sveta",
+        "lastName": "Titova",
+        "image": "img/profile-3.png",
+        "location": "Pechersk,Ukraine",
+        "talent": "Ebat mozg)",
+        "specialization": "Tra-ta-ta"
+    },{
+    	"memberId": "3",
+        "firstName": "Daria",
+        "lastName": "Lipovenko",
+        "image": "img/profile-4.png",
+        "location": "Obolon,Ukraine",
+        "talent": "Booty Shake",
+        "specialization": "Ass-ASss-Assss))) My ass is harder than any nut"
+    },{ 
+    	"memberId": "4",
+        "firstName": "Bogdan",
+        "lastName": "Tkachyk",
+        "image": "img/profile-5.png",
+        "location": "Obolon,Ukraine",
+        "talent": "Make joint",
+        "specialization": "I can make joint even if I'm sleepling"
+    },{
+    	"memberId": "5",
+        "firstName": "Ljubava",
+        "lastName": "Petriv",
+        "image": "img/profile-6.png",
+        "location": "Poznan,Poland",
+        "talent": "Make haos",
+        "specialization": "Back off, man."
+    },{
+    	"memberId": "6",
+        "firstName": "Sofia",
+        "lastName": "Borusko",
+        "image": "img/profile-7.png",
+        "location": "Podil,Ukraine",
+        "talent": "Bachacha",
+        "specialization": " can dance bachacha, better then God."
+    },{
+    	"memberId": "7",
+        "firstName": "Daria",
+        "lastName": "Kachailo",
+        "image": "img/img-profile.jpg",
+        "location": "Kiev,Poland",
+        "talent": "Twerk",
+        "specialization": "My talant is so F*cking Awesome! I can twerk like nigga! ahahah)))"
+    },{
+    	"memberId": "8",
+        "firstName": "Alena",
+        "lastName": "Kostenko",
+        "image": "img/profile-8.png",
+        "location": "Rotterdam,Netherlands",
+        "talent": "Be friendly)",
+        "specialization": "My talant is so F*cking Awesome!)))"
+    }
+]

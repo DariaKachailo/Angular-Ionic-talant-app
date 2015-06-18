@@ -1,5 +1,5 @@
-<ion-view view-title="Profile">
-	<ion-content class="my_background" ng-repeat="profile in profileM">
+<ion-view view-title="Friend">
+	<ion-content class="my_background" >
 		<div class="my_background_2">
 			<div class="row my_background_2">
 				<div class="col col-25 col-center">
@@ -11,7 +11,7 @@
 				</div>
 				<div class="col col-50">
 					<div>
-						<img class="profile_image profile_image_border" ng-src="{{profile.image}}">
+						<img class="profile_image profile_image_border" ng-src="{{member.image}}">
 					</div>
 				</div>
 				<div class="col col-25 col-center">
@@ -23,19 +23,19 @@
 				</div>
 			</div>
 			<div class="profile_name">
-				<p>{{profile.firstName}}{{profile.lastName}}</p>
+				<p>{{member.firstName}}{{member.lastName}}</p>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col col-34 col-center">
-				<h5 class="my_text">{{profile.talent}}</h5>
+				<h5 class="my_text">{{member.talent}}</h5>
 
 			</div>
 
 			<div class="col col-33 col-center profile_location">
 				<i class="icon ion-ios-location profile_location_icon"></i>
-				<p class="my_text">{{profile.location}}</p>
+				<p class="my_text">{{member.location}}</p>
 			</div>
 
 			<div class="col col-33 col-center">
@@ -51,7 +51,7 @@
 				<h5 class="my_text">Description</h5>
 			</div>
 		  <div class="col col-67">
-		  	<p class="my_text">{{profile.specialization}}</p>
+		  	<p class="my_text">{{member.specialization}}</p>
 		</div>
 
 	</ion-content>

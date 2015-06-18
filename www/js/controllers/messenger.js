@@ -1,4 +1,4 @@
-talant.controller('MessangerCtrl',['$scope', function($scope) {
+talant.controller('MessengerCtrl',['$scope', function($scope) {
   
     $scope.data = {
         showDelete: false

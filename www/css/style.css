@@ -1,10 +1,44 @@
+/* Colors */
+
 .my_main {
 	background-color: #373d4a !important;
 	border: none;
 }
+.my_background {
+	background-color: #E2E2E2;
+	border-color: #AFB1B6;
+}
+
+.my_background_2 {
+	background-color: #373d4a;
+}
 
 .my_color {
 	color: #9D8C70 !important;
+}
+
+.my_item {
+	background-color: #FFF8F0 ;
+}
+
+.my_icon_2 {
+	color: #9D8C70 !important;
+}
+
+.my_text {
+	color: #373d4a;
+}
+
+.my_footer {
+	background-color: #0E1424 !important;
+}
+
+.my_icon_tomato {
+	color: #ed5038;
+}
+
+.my_icon_green {
+	color: #38ABAA;
 }
 
 .menu {
@@ -27,24 +61,20 @@
 	color: #9D8C70;
 }
 
-a {
-	text-decoration: none;
-}
-
 .col {
 	display: flex;
 	justify-content: center;
 }
 
-/* Profile Page */
-
 hr {
 	margin-bottom: -1px;
 }
 
-.profile {
-	background-color: #373d4a;
+a {
+	text-decoration: none;
 }
+
+/* Profile Page */
 
 .profile_chat {
 	width: 50px;
@@ -91,17 +121,6 @@ hr {
 	color: #9D8C70;
 }
 
-
-.my_text {
-	color: #373d4a;
-}
-
-.my_background {
-	background-color: #E2E2E2;
-	border-color: #AFB1B6;
-	
-}
-
 .my_like_icon {
 	font-size: 30px;
 	color: #9D8C70;
@@ -118,22 +137,6 @@ hr {
 	margin-top: 3px;
 }
 
-/* Find talent Page */
-.my_background_2 {
-	background-color: #373d4a;
-}
-
-.my_item {
-	background-color: #FFF8F0 ;
-}
-
-.my_icon_2 {
-	color: #9D8C70 !important;
-}
-
-.my_icon_tomato {
-	color: #ed5038;
-}
 
 /* Message Page */
 .message_item_bg a {
@@ -220,10 +223,6 @@ img.profile-pic.right {
 	bottom: -7.5px;
 }
 
-.my_footer {
-	background-color: #0E1424 !important;
-}
-
 .chat-bubble.left {
 	background-color: #E2E2E2;
 	color: #373d4a;
@@ -269,7 +268,6 @@ img.profile-pic.right {
 	position: relative;
 	top: -3px;
 }
-
 
 .bold {
 	font-weight: bold;

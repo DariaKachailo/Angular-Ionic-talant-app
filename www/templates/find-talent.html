@@ -12,7 +12,7 @@
 			</button>
 		</div>
 
-		<div ng-repeat="user in users">
+		<div ng-repeat="user in users" ui-sref="eventmenu.profile">
 		    <a class="item item-avatar item-icon-right my_item" href="#" >
 				<img class="profile_image_border" ng-src="{{user.image}}">
 				<h2 class="my_text"> {{user.name}} </h2>
