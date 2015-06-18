@@ -1,22 +1,10 @@
-talant.controller('ProfileCtrl',['$scope', '$http', 'localStorage', function($scope, $http, localStorage) {
+talant.controller('ProfileCtrl',['$scope', '$http', 'localStorage', 'getInfo', function($scope, $http, localStorage, getInfo) {
 
-  $scope.profileM = [];
+    $scope.profile = {};
+    var localProfile = localStorage.getObject('profile');
 
-    (function(){
-        var localProfile = localStorage.getObject('profile');
-        if (localProfile) {
-            $scope.profileM = localProfile;
-
-        } else {
-            $http({
-                method: 'GET',
-                url: './data/profile.json'
-            }).success(function(data){
-                $scope.profileM = data;
-                localStorage.setObject('profile', data);
-            });
-        }
-    })();
-    console.log($scope.profileM);
-
+    getInfo.getProfile().then(function(data){
+        $scope.profile = data;
+        localStorage.setObject('profile', data);
+    });
 }]);

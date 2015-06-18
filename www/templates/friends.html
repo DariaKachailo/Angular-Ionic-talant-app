@@ -2,11 +2,11 @@
 	<ion-content class="my_background_2">
 		<div class="row friends_row">
 
-			<div class="col col-33" ng-repeat="friend in friends" ui-sref="eventmenu.member({memberId: members.memberId})">
+			<div class="col col-33" ng-repeat="friend in members" ui-sref="eventmenu.member({memberId: friend.memberId})">
 				<div class="friend">
 					<a href="#" >
 						<img class="profile_image_border my_size" ng-src="{{friend.image}}">
-						<p class="friends_title"> {{friend.name}} </p>
+						<p class="friends_title"> {{friend.firstName}} {{friend.lastName}} </p>
 				    </a>
 				</div>		
 			</div>

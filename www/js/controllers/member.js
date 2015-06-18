@@ -1,22 +1,23 @@
-talant.controller('MembersCtrl',['$scope', '$http', 'localStorage', function($scope, $http, localStorage) {
+talant.controller('MembersCtrl',['$scope', 'localStorage', 'getInfo','$stateParams', function($scope, localStorage, getInfo,$stateParams) {
 
-  $scope.members = [];
+    $scope.member = {};
+    // var localMember = localStorage.getObject('members');
 
-    (function(){
-        var localMembers = localStorage.getObject('members');
-        if (localMembers) {
-            $scope.members = localMembers;
+    // var getUser = function(){
+    //     var memberId = $stateParams.memberId;
+    //     //тут будет запрос на получение пользователя по айди 
+    //     getInfo.getMember(memberId).then(function(data){
+    //         $scope.member = data;
+    //         console.log(data);
+    //     });
+    // };
+    getInfo.getMember().then(function(data){
+        $scope.member = data;
+        // localStorage.setObject('members', data);
+        console.log($scope.member);
+    });
 
-        } else {
-            $http({
-                method: 'GET',
-                url: './data/members.json'
-            }).success(function(data){
-                $scope.members = data;
-                localStorage.setObject('members', data);
-            });
-        }
-    })();
-    console.log($scope.members);
-
+    // $scope.$on('$ionicView.beforeEnter', function(){
+    //     getUser();
+    // });
 }]);
