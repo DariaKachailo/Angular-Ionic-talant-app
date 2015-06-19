@@ -1,0 +1,48 @@
+[
+    { 
+        "id": "0",
+        "firstName": "Stanislav",
+        "lastName": "Dzhus",
+        "image": "img/profile-1.png"
+    },{ 
+    	"id": "1",
+        "firstName": "Eugene",
+        "lastName": "Slavnuj",
+        "image": "img/profile-2.png"
+    },{
+    	"id": "2",
+        "firstName": "Sveta",
+        "lastName": "Titova",
+        "image": "img/profile-3.png"
+    },{
+    	"id": "3",
+        "firstName": "Daria",
+        "lastName": "Lipovenko",
+        "image": "img/profile-4.png"
+    },{ 
+    	"id": "4",
+        "firstName": "Bogdan",
+        "lastName": "Tkachyk",
+        "image": "img/profile-5.png"
+    },{
+    	"id": "5",
+        "firstName": "Ljubava",
+        "lastName": "Petriv",
+        "image": "img/profile-6.png"
+    },{
+    	"id": "6",
+        "firstName": "Sofia",
+        "lastName": "Borusko",
+        "image": "img/profile-7.png"
+    },{
+    	"id": "7",
+        "firstName": "Daria",
+        "lastName": "Kachailo",
+        "image": "img/img-profile.jpg"
+    },{
+    	"id": "8",
+        "firstName": "Alena",
+        "lastName": "Kostenko",
+        "image": "img/profile-8.png"
+    }
+]

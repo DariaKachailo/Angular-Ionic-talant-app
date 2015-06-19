@@ -1,56 +1,19 @@
-talant.controller('MessengerCtrl',['$scope', function($scope) {
+talant.controller('MessengerCtrl',['$scope', 'localStorage', 'getInfo', function($scope, localStorage, getInfo) {
   
     $scope.data = {
         showDelete: false
     };
-      
-    $scope.edit = function(user) {
-        alert('Edit User: ' + user.id);
+          
+    $scope.onUserDelete = function(messenger) {
+        $scope.messengers.splice($scope.messengers.indexOf(messenger), 1);
     };
 
-    $scope.share = function(user) {
-        alert('Share User: ' + user.id);
-    };
-      
-    $scope.moveUser = function(user, fromIndex, toIndex) {
-        $scope.users.splice(fromIndex, 1);
-        $scope.users.splice(toIndex, 0, user);
-    };
-      
-    $scope.onUserDelete = function(user) {
-        $scope.users.splice($scope.users.indexOf(user), 1);
-        console.log('thus');
-    };
-  
-  $scope.users = [
-        { 
-            id: 0,
-            name: 'Stanislav',
-            image: '/img/ionic.png'
-        },{ 
-            id: 1,
-            name: 'Eugene',
-            image: '/img/ionic.png'
-        },{
-            id: 2,
-            name: 'Olga',
-            image: '/img/ionic.png'
-        },{
-            id: 3,
-            name: 'Daria',
-            image: '/img/ionic.png'
-        },{ 
-            id: 4,
-            name: 'Bogdan',
-            image: '/img/ionic.png'
-        },{
-            id: 5,
-            name: 'Ljubava',
-            image: '/img/ionic.png'
-        },{
-            id: 6,
-            name: 'Sofia',
-            image: '/img/ionic.png'
-        }
-    ]; 
+    $scope.messengers = {};
+    var localMessegers = localStorage.getObject('messengers');
+
+    getInfo.getMessengers().then(function(data){
+        $scope.messengers = data;
+        localStorage.setObject('messengers', data);
+        console.log(data);
+    });
 }]);

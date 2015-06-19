@@ -1,24 +1,24 @@
 <ion-view view-title="Photo">
   <ion-content class="my_background_2">
-	<div class="list card">
+	<div class="list card" ng-repeat="photo in photos">
 		<div class="item item-avatar my_background">
-			<img src="img/ionic.png" class="profile_image_border">
-			<h2 class="my_text">Daria</h2>
-			<p class="my_text"></p>
+			<img ng-src="{{photo.avatar}}" class="profile_image_border">
+			<h2 class="my_text">{{photo.title}}</h2>
+			<p class="my_text">{{photo.talent}}</p>
 		</div>
 
-		<div class="item item-image">
-			<img src="img/ionic.png">
+		<div class="item item-image my_photo">
+			<img ng-src="{{photo.image}}">
 		</div>
 
 		<div class="item tabs tabs-secondary tabs-icon-left my_background">
-			<a class="tab-item" href="#">
+			<a class="tab-item photo_text" href="#">
 				<i class="icon ion-ios-paw my_icon_tomato"></i>
-				Dislike
+				{{photo.dislikesNumber}}
 			</a>
-			<a class="tab-item" href="#">
+			<a class="tab-item photo_text" href="#">
 				<i class="icon ion-ios-paw my_icon_green"></i>
-				Like
+				{{photo.likesNumber}}
 			</a>
 		</div>
 	</div>

@@ -1,21 +1,10 @@
-talant.controller('FindTalentCtrl',['$scope', '$http', 'localStorage', function($scope, $http, localStorage) {
+talant.controller('FindTalentCtrl',['$scope', 'localStorage', 'getInfo', function($scope, localStorage, getInfo) {
 
-	$scope.users = [];
+    $scope.talents = {};
+    var localTalants = localStorage.getObject('users');
 
-    (function(){
-        // var localUsers = localStorage.getObject('users');
-        // if (localUsers) {
-        //     $scope.users = localUsers;
-
-        // } else {
-            $http({
-                method: 'GET',
-                url: './data/users.json'
-            }).success(function(data){
-                $scope.users = data;
-                localStorage.setObject('users', data);
-            });
-        // }
-    })();
-
+    getInfo.getTalents().then(function(data){
+        $scope.talents = data;
+        localStorage.setObject('users', data);
+    });
 }]);

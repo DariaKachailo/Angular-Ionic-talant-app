@@ -2,7 +2,8 @@ talant.controller('MembersCtrl',['$scope', 'localStorage', 'getInfo','$statePara
 
     $scope.member = {};
     // var localMember = localStorage.getObject('members');
-
+ var memberId = $stateParams.memberId;
+console.log(memberId);
     // var getUser = function(){
     //     var memberId = $stateParams.memberId;
     //     //тут будет запрос на получение пользователя по айди 

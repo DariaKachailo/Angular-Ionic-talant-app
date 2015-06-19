@@ -28,7 +28,17 @@ var talant = angular.module('starter', ['ionic'])
     // }
 })
 
-.config(function($stateProvider,$urlRouterProvider) {
+.config(function($stateProvider,$urlRouterProvider,$ionicAppProvider) {
+
+  $ionicAppProvider.identify({
+    // The App ID (from apps.ionic.io) for the server
+    app_id: '9262b2a5',
+    // The public API key all services will use for this app
+    api_key: 'fbd5d43842d8e7c51fc61bb4c3c9ac4179d74368a83afa79',
+    // The GCM project ID (project number) from your Google Developer Console (un-comment if used)
+    // gcm_id: 'YOUR_GCM_ID'
+  });
+	
 	$stateProvider
 
 	.state('eventmenu', {
@@ -108,6 +118,7 @@ var talant = angular.module('starter', ['ionic'])
 		views: {
 			'menuContent': {
 			templateUrl: "/templates/photo.html",
+			controller: "PhotosCtrl"
 			}
 		}
 	})

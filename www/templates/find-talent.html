@@ -12,11 +12,11 @@
 			</button>
 		</div>
 
-		<div ng-repeat="user in users" ui-sref="eventmenu.profile">
+		<div ng-repeat="user in talents" ui-sref="eventmenu.member({memberId:user.memberId})">
 		    <a class="item item-avatar item-icon-right my_item" href="#" >
 				<img class="profile_image_border" ng-src="{{user.image}}">
-				<h2 class="my_text"> {{user.name}} </h2>
-				<p class="my_text"> {{user.specification}} </p>
+				<h2 class="my_text"> {{user.talent}} </h2>
+				<p class="my_text"> {{user.location}} </p>
 				<i class="icon ion-ios-arrow-right my_icon_tomato"></i>
 		    </a>
 		</div>

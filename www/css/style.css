@@ -330,8 +330,14 @@ a.autolinker {
 /* Friends Page */
 
 .my_size {
+	margin-left: 2px;
 	width: 80px;
 	height: 80px;
+	margin-top: 2px;
+ }
+
+.friend {
+	text-align: center;
 }
 
 .friends_title {
@@ -344,3 +350,13 @@ a.autolinker {
 	justify-content: center !important;
 }
 
+/* Photo Page */
+
+.my_photo {
+	min-height: 200px;
+	max-height: 275px;
+}
+
+.photo_text {
+  font-size: 23px !important;
+  color: #000;

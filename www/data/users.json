@@ -1,43 +1,75 @@
 [
     { 
-        "id": "0",
-        "name": "Stanislav Dzhus",
-        "image": "img/ionic.png",
-        "specification": "Back off, man. I'm a blablabla."
+        "memberId": "2",
+        "firstName": "Sveta",
+        "lastName": "Titova",
+        "image": "img/profile-3.png",
+        "location": "Pechersk,Ukraine",
+        "talent": "Ebat mozg)",
+        "specialization": "Tra-ta-ta"
     },{ 
-        "id": "1",
-        "name": "Eugene Slavnuj",
-        "image": "img/ionic.png",
-        "specification": "My talent is doebuvalsja."
+        "memberId": "1",
+        "firstName": "Eugene",
+        "lastName": "Slavnuj",
+        "image": "img/profile-2.png",
+        "location": "Obolon,Ukraine",
+        "talent": "DoEbuvatsja",
+        "specialization": "My talent is doebuvalsja."
     },{
-        "id": "2",
-        "name": "Olga Kosturko",
-        "image": "img/ionic.png",
-        "specification": "Bblablabla."
+        "memberId": "0",
+        "firstName": "Stanislav",
+        "lastName": "Dzhus",
+        "image": "img/profile-1.png",
+        "location": "Romankiv,Ukraine",
+        "talent": "Zzzzanuda",
+        "specialization": "Back off, man. I'm a blablabla."
     },{
-        "id": "3",
-        "name": "Daria Lipovenko",
-        "image": "img/ionic.png",
-        "specification": "Ass-ASss-Assss))) My ass is harder than any nut"
+        "memberId": "6",
+        "firstName": "Sofia",
+        "lastName": "Borusko",
+        "image": "img/profile-7.png",
+        "location": "Podil,Ukraine",
+        "talent": "Bachacha",
+        "specialization": " can dance bachacha, better then God."
     },{ 
-        "id": "4",
-        "name": "Bogdan Tkachyk",
-        "image": "img/ionic.png",
-        "specification": "I can make joint even if I'm sleepling"
+        "memberId": "4",
+        "firstName": "Bogdan",
+        "lastName": "Tkachyk",
+        "image": "img/profile-5.png",
+        "location": "Obolon,Ukraine",
+        "talent": "Make joint",
+        "specialization": "I can make joint even if I'm sleepling"
     },{
-        "id": "5",
-        "name": "Ljubava Petriv",
-        "image": "img/ionic.png",
-        "specification": "Back off, man."
+        "memberId": "5",
+        "firstName": "Ljubava",
+        "lastName": "Petriv",
+        "image": "img/profile-6.png",
+        "location": "Poznan,Poland",
+        "talent": "Make haos",
+        "specialization": "Back off, man."
     },{
-        "id": "6",
-        "name": "Sofia Borusko",
-        "image": "img/ionic.png",
-        "specification": "I can dance bachacha, better then God."
+        "memberId": "3",
+        "firstName": "Daria",
+        "lastName": "Lipovenko",
+        "image": "img/profile-4.png",
+        "location": "Obolon,Ukraine",
+        "talent": "Booty Shake",
+        "specialization": "Ass-ASss-Assss))) My ass is harder than any nut"
     },{
-        "id": "7",
-        "name": "Daria Kachailo",
+        "memberId": "7",
+        "firstName": "Daria",
+        "lastName": "Kachailo",
         "image": "img/img-profile.jpg",
-        "specification": "My talant is so F*cking Awesome! I can twerk like nigga! ahahah)))"
+        "location": "Kiev,Poland",
+        "talent": "Twerk",
+        "specialization": "My talant is so F*cking Awesome! I can twerk like nigga! ahahah)))"
+    },{
+        "memberId": "8",
+        "firstName": "Alena",
+        "lastName": "Kostenko",
+        "image": "img/profile-8.png",
+        "location": "Rotterdam,Netherlands",
+        "talent": "Be friendly)",
+        "specialization": "My talant is so F*cking Awesome!)))"
     }
 ]

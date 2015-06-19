@@ -1,0 +1,38 @@
+[
+    { 
+        "title": "Sveta",
+        "avatar": "img/profile-3.png",
+        "image": "img/family-1.png",
+        "talent": "Ebat mozg)",
+        "likesNumber" : "49",
+        "dislikesNumber": "5"
+    },{ 
+        "title": "Eugene",
+        "avatar": "img/profile-2.png",
+        "image": "img/friends-1.png",
+        "talent": "DoEbuvatsja",
+        "likesNumber" : "94",
+        "dislikesNumber": "54"
+    },{
+        "title": "Stanislav",
+        "avatar": "img/profile-1.png",
+        "image": "img/friends-2.png",
+        "talent": "Zzzzanuda",
+        "likesNumber" : "440",
+        "dislikesNumber": "49"
+    },{
+        "title": "Sofia",
+        "avatar": "img/profile-7.png",
+        "image": "img/friends-3.png",
+        "talent": "Bachacha",
+        "likesNumber" : "494",
+        "dislikesNumber": "54"
+    },{ 
+        "title": "Bogdan",
+        "avatar": "img/profile-4.png",
+        "image": "img/friends-4.png",
+        "talent": "Make joint",
+        "likesNumber" : "13",
+        "dislikesNumber": "55"
+    }
+]

@@ -13,20 +13,7 @@ talant.factory('getInfo', [ '$http', '$q',  function($http, $q) {
             return q.promise;
         },
 
-        getFriends:  function(){
-            var q = $q.defer();
-            $http({
-                method: "GET",
-                url: './data/users.json'
-            }).success(function(data){
-                q.resolve(data);
-            }).error(function(error){
-                q.reject(error);
-            });
-            return q.promise;
-        },
-
-        getTalent:  function(){
+        getTalents:  function(){
             var q = $q.defer();
             $http({
                 method: "GET",
@@ -63,6 +50,32 @@ talant.factory('getInfo', [ '$http', '$q',  function($http, $q) {
                         q.resolve(data[i]);
                     };
                 };
+            }).error(function(error){
+                q.reject(error);
+            });
+            return q.promise;
+        },
+
+        getPhotos:  function(){
+            var q = $q.defer();
+            $http({
+                method: "GET",
+                url: './data/photos.json'
+            }).success(function(data){
+                q.resolve(data);
+            }).error(function(error){
+                q.reject(error);
+            });
+            return q.promise;
+        },
+
+        getMessengers:  function(){
+            var q = $q.defer();
+            $http({
+                method: "GET",
+                url: './data/messengers.json'
+            }).success(function(data){
+                q.resolve(data);
             }).error(function(error){
                 q.reject(error);
             });
