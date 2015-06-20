@@ -45,11 +45,11 @@ talant.factory('getInfo', [ '$http', '$q',  function($http, $q) {
                 method: "GET",
                 url: './data/members.json'
             }).success(function(data){
-                for(var i=0; i < data.length; i++) {
-                    if (data[i].id == id) {
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].memberId == id) {
                         q.resolve(data[i]);
-                    };
-                };
+                    }
+                }
             }).error(function(error){
                 q.reject(error);
             });
