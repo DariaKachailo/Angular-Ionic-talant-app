@@ -29,7 +29,6 @@ var talant = angular.module('starter', ['ionic'])
 })
 
 .config(function($stateProvider,$urlRouterProvider) {
-
 	$stateProvider
 
 	.state('eventmenu', {
@@ -104,11 +103,11 @@ var talant = angular.module('starter', ['ionic'])
 		}
 	})
 
-	.state('eventmenu.photo', {
-		url: "/photo",
+	.state('eventmenu.photos', {
+		url: "/photos",
 		views: {
 			'menuContent': {
-			templateUrl: "/templates/photo.html",
+			templateUrl: "/templates/photos.html",
 			controller: "PhotosCtrl"
 			}
 		}
