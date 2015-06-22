@@ -4,72 +4,90 @@
         "firstName": "Stanislav",
         "lastName": "Dzhus",
         "image": "img/profile-1.png",
-        "location": "Romankiv,Ukraine",
+        "location_city": "Romankiv",
+        "location_country": "Ukraine",
         "talent": "Zzzzanuda",
-        "specialization": "Back off, man. I'm a blablabla."
+        "specialization": "Back off, man. I'm a blablabla.",
+        "likes": "38"
     },{ 
     	"memberId": "1",
         "firstName": "Eugene",
         "lastName": "Slavnuj",
         "image": "img/profile-2.png",
-        "location": "Obolon,Ukraine",
+        "location_city": "Obolon",
+        "location_country": "Ukraine",
         "talent": "DoEbuvatsja",
-        "specialization": "My talent is doebuvalsja."
+        "specialization": "My talent is doebuvalsja.",
+        "likes": "358"
     },{
     	"memberId": "2",
         "firstName": "Sveta",
         "lastName": "Titova",
         "image": "img/profile-3.png",
-        "location": "Pechersk,Ukraine",
+        "location_city": "Pechersk",
+        "location_country": "Ukraine",
         "talent": "Ebat mozg)",
-        "specialization": "Tra-ta-ta"
+        "specialization": "Tra-ta-ta",
+        "likes": "93"
     },{
     	"memberId": "3",
         "firstName": "Daria",
         "lastName": "Lipovenko",
         "image": "img/profile-4.png",
-        "location": "Obolon,Ukraine",
+        "location_city": "Obolon",
+        "location_country": "Ukraine",
         "talent": "Booty Shake",
-        "specialization": "Ass-ASss-Assss))) My ass is harder than any nut"
+        "specialization": "Ass-ASss-Assss))) My ass is harder than any nut",
+        "likes": "963"
     },{ 
     	"memberId": "4",
         "firstName": "Bogdan",
         "lastName": "Tkachyk",
         "image": "img/profile-5.png",
-        "location": "Obolon,Ukraine",
+        "location_city": "Obolon",
+        "location_country": "Ukraine",
         "talent": "Make joint",
-        "specialization": "I can make joint even if I'm sleepling"
+        "specialization": "I can make joint even if I'm sleepling",
+        "likes": "9063"
     },{
     	"memberId": "5",
         "firstName": "Ljubava",
         "lastName": "Petriv",
         "image": "img/profile-6.png",
-        "location": "Poznan,Poland",
+        "location_city": "Poznan",
+        "location_country": "Poland",
         "talent": "Make haos",
-        "specialization": "Back off, man."
+        "specialization": "Back off, man.",
+        "likes": "203"
     },{
     	"memberId": "6",
         "firstName": "Sofia",
         "lastName": "Borusko",
         "image": "img/profile-7.png",
-        "location": "Podil,Ukraine",
+        "location_city": "Podil",
+        "location_country": "Ukraine",
         "talent": "Bachacha",
-        "specialization": " can dance bachacha, better then God."
+        "specialization": " can dance bachacha, better then God.",
+        "likes": "289"
     },{
     	"memberId": "7",
         "firstName": "Daria",
         "lastName": "Kachailo",
         "image": "img/img-profile.jpg",
-        "location": "Kiev,Poland",
+        "location_city": "Kiev",
+        "location_country": "Ukraine",
         "talent": "Twerk",
-        "specialization": "My talant is so F*cking Awesome! I can twerk like nigga! ahahah)))"
+        "specialization": "My talant is so F*cking Awesome! I can twerk like nigga! ahahah)))",
+        "likes": "2309"
     },{
     	"memberId": "8",
         "firstName": "Alena",
         "lastName": "Kostenko",
         "image": "img/profile-8.png",
-        "location": "Rotterdam,Netherlands",
+        "location_city": "Rotterdam",
+        "location_country": "Netherlands",
         "talent": "Be friendly)",
-        "specialization": "My talant is so F*cking Awesome!)))"
+        "specialization": "My talant is so F*cking Awesome!)))",
+        "likes": "479"
     }
 ]

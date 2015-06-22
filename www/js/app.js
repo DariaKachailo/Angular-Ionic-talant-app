@@ -107,7 +107,7 @@ var talant = angular.module('starter', ['ionic'])
 		url: "/photos",
 		views: {
 			'menuContent': {
-			templateUrl: "/templates/photos.html",
+			templateUrl: "templates/photos.html",
 			controller: "PhotosCtrl"
 			}
 		}
@@ -117,7 +117,7 @@ var talant = angular.module('starter', ['ionic'])
 		url: "/about",
 		views: {
 			'menuContent': {
-			templateUrl: "/templates/about.html",
+			templateUrl: "templates/about.html",
 			}
 		}
 	})

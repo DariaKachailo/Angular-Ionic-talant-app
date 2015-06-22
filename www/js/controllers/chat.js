@@ -46,20 +46,20 @@ talant.controller('ChatCtrl', ['$scope', '$rootScope', '$state', '$stateParams',
       }, 20000);
     });
 
-    $scope.$on('$ionicView.leave', function() {
-      // console.log('leaving UserMessages view, destroying interval');
-      // Make sure that the interval is destroyed
-      if (angular.isDefined(messageCheckTimer)) {
-        $interval.cancel(messageCheckTimer);
-        messageCheckTimer = undefined;
-      }
-    });
+    // $scope.$on('$ionicView.leave', function() {
+    //   // console.log('leaving UserMessages view, destroying interval');
+    //   // Make sure that the interval is destroyed
+    //   if (angular.isDefined(messageCheckTimer)) {
+    //     $interval.cancel(messageCheckTimer);
+    //     messageCheckTimer = undefined;
+    //   }
+    // });
 
-    $scope.$on('$ionicView.beforeLeave', function() {
-      if (!$scope.input.message || $scope.input.message === '') {
-        localStorage.removeItem('userMessage-' + $scope.toUser._id);
-      }
-    });
+    // $scope.$on('$ionicView.beforeLeave', function() {
+    //   if (!$scope.input.message || $scope.input.message === '') {
+    //     localStorage.removeItem('userMessage-' + $scope.toUser._id);
+    //   }
+    // });
 
     function getMessages() {
       // the service is mock but you would probably pass the toUser's GUID here
@@ -119,16 +119,16 @@ talant.controller('ChatCtrl', ['$scope', '$rootScope', '$state', '$stateParams',
     
     // this keeps the keyboard open on a device only after sending a message, it is non obtrusive
     function keepKeyboardOpen() {
-      // console.log('keepKeyboardOpen');
+      console.log('keepKeyboardOpen');
       txtInput.one('blur', function() {
-        // console.log('textarea blur, focus back on it');
+        console.log('textarea blur, focus back on it');
         txtInput[0].focus();
       });
     }
 
     $scope.onMessageHold = function(e, itemIndex, message) {
-      // console.log('onMessageHold');
-      // console.log('message: ' + JSON.stringify(message, null, 2));
+      console.log('onMessageHold');
+      console.log('message: ' + JSON.stringify(message, null, 2));
       $ionicActionSheet.show({
         buttons: [{
           text: 'Copy Text'

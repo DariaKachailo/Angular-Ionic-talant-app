@@ -1,9 +1,9 @@
 <ion-view view-title="Profile">
-	<ion-content class="my_background">
+	<ion-content class="my_background_2">
 		<div class="my_background_2">
 			<div class="row my_background_2">
 				<div class="col col-25 col-center">
-					<div class="profile_chat">
+					<div class="profile_tab">
 					  <a class="tab-item" href="#">
 					    <i class="icon ion-ios-chatbubble-outline my-icon"></i>
 					  </a>
@@ -15,43 +15,43 @@
 					</div>
 				</div>
 				<div class="col col-25 col-center">
-					<div class="profile_heart">
+					<div class="profile_tab">
 					  <a class="tab-item" href="#">
-					    <i class="icon ion-ios-heart-outline my-icon"></i>
+					    <i class="icon ion-ios-heart-outline my-icon my_icon_heart"></i>
 					  </a>
 					</div>
 				</div>
 			</div>
 			<div class="profile_name">
-				<p>{{profile.firstName}}{{profile.lastName}}</p>
+				<p>{{profile.firstName}} {{profile.lastName}}</p>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col col-34 col-center">
-				<h5 class="my_text">{{profile.talent}}</h5>
+		<div class="my_background">
+			<div class="row">
+				<div class="col col-34 col-center">
+					<h5 class="my_text">{{profile.talent}}</h5>
 
-			</div>
+				</div>
 
-			<div class="col col-33 col-center profile_location">
-				<i class="icon ion-ios-location profile_location_icon"></i>
-				<p class="my_text">{{profile.location}}</p>
-			</div>
+				<div class="col col-33 col-center profile_location">
+					<i class="icon ion-ios-location profile_location_icon"></i>
+					<p class="my_text">&nbsp;{{profile.location_city}}, {{profile.location_country}}</p>
+				</div>
 
-			<div class="col col-33 col-center">
-				<i class="icon ion-ios-heart my_like_icon"></i>
-				<p class="like_number">20</p>	
+				<div class="col col-33 col-center">
+					<i class="icon ion-ios-heart my_like_icon"></i>
+					<p class="like_number"> {{profile.likes}}</p>	
+				</div>
+			</div>		
+			<hr/>
+			<div class="row">
+				<div class="col col-33">
+					<h5 class="profile_descriprion my_text">Description</h5>
+				</div>
+			  <div class="col col-67">
+			  	<p class="my_text">{{profile.specialization}}</p>
 			</div>
-		</div>
-		
-		<hr/>
-
-		<div class="row">
-			<div class="col col-33">
-				<h5 class="my_text">Description</h5>
-			</div>
-		  <div class="col col-67">
-		  	<p class="my_text">{{profile.specialization}}</p>
 		</div>
 
 	</ion-content>
