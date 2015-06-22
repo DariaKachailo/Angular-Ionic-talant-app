@@ -7,4 +7,11 @@ talant.controller('ProfileCtrl',['$scope', '$http', 'localStorage', 'getInfo', f
         $scope.profile = data;
         localStorage.setObject('profile', data);
     });
+
+    $scope.increment = function(profile,localProfile){
+		profile.likes ++;
+		localProfile = profile;
+    	localStorage.setObject('profile', localProfile);
+    	console.log(localProfile);
+    };
 }]);

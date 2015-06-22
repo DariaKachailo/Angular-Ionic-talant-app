@@ -1,4 +1,4 @@
-talant.factory('getInfo', [ '$http', '$q',  function($http, $q) {
+talant.factory('getInfo', [ '$http', '$q', function($http, $q) {
     return {
         getProfile:  function(){
             var q = $q.defer();

@@ -1,11 +1,8 @@
-talant.controller('FriendsCtrl',['$scope', 'localStorage', 'getInfo', function($scope, localStorage, getInfo) {
+talant.controller('FriendsCtrl',['$scope', 'getInfo', function($scope, getInfo) {
 
     $scope.members = {};
-    var localMembers = localStorage.getObject('members');
 
     getInfo.getMembers().then(function(data){
         $scope.members = data;
-        localStorage.setObject('members', data);
-        console.log(data);
     });
 }]);
