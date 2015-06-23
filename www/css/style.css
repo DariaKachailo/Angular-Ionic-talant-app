@@ -393,7 +393,7 @@ a.autolinker {
 
 /* Map Page */
 
-#map {
+#map-canvas {
 	width: 100%;
 	height: 100%;
 }

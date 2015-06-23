@@ -1,8 +1,5 @@
 <ion-view view-title="Map">
-	<ion-content class="my_background_2">
-		<div id="map" data-tap-disabled="true"></div>
-    </ion-content>
-    <ion-footer-bar class="bar-dark">
-		<a ng-click="centerOnMe()" class="button button-icon icon ion-navigate">Find Me</a>
-    </ion-footer-bar>
+	<ion-content class="my_background_2" ng-init="initialize()">
+		<div id="map-canvas" data-tap-disabled="true"></div>
+	</ion-content>
 </ion-view>
