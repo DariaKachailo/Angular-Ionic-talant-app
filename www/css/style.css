@@ -142,6 +142,11 @@ a {
 	margin-top: 3px;
 }
 
+.my_text_location {
+	color: #373d4a;
+	display: inline-block;
+}
+
 
 /* Message Page */
 .message_item_bg a {
@@ -384,4 +389,15 @@ a.autolinker {
 
 .about_article {
 	text-align: justify;
+}
+
+/* Map Page */
+
+#map {
+	width: 100%;
+	height: 100%;
+}
+
+.scroll {
+	height: 100%;
 }

@@ -16,7 +16,7 @@
 				</div>
 				<div class="col col-25 col-center">
 					<div class="profile_tab">
-					  <a class="tab-item" ng-click="increment(profile)">
+					  <a class="tab-item" href="#">
 					    <i class="icon ion-ios-heart-outline my-icon my_icon_heart"></i>
 					  </a>
 					</div>
@@ -35,8 +35,10 @@
 				</div>
 
 				<div class="col col-33 col-center profile_location">
-					<i class="icon ion-ios-location profile_location_icon"></i>
-					<p class="my_text">&nbsp;{{profile.location_city}}, {{profile.location_country}}</p>
+					<span ui-sref="eventmenu.map">
+						<i class="icon ion-ios-location profile_location_icon"></i>
+						<p class="my_text_location">&nbsp;{{profile.location_city}}, {{profile.location_country}}</p>
+					</span>
 				</div>
 
 				<div class="col col-33 col-center">

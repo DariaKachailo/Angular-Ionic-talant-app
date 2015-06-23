@@ -122,5 +122,15 @@ var talant = angular.module('starter', ['ionic'])
 		}
 	})
 
+	.state('eventmenu.map', {
+		url: "/map",
+		views: {
+			'menuContent': {
+			templateUrl: "templates/map.html",
+			controller: "MapCtrl"
+			}
+		}
+	})
+
 	$urlRouterProvider.otherwise("/event/profile");
 })
