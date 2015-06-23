@@ -15,18 +15,13 @@ talant.controller('MembersCtrl',['$scope', 'localStorage', 'getInfo','$statePara
 
     $scope.likes = function(member){
         var localMembers = localStorage.getObject('members');
-        $scope.member = localMember;
             for( var i=0; i < localMembers.length; i++) {
-                var localMember = localMembers[i];
-                if(localMember.memberId == member.memberId){
-                    localMember.likes ++;
-                    console.log(localMember);
-                    $scope.member = localMember;
-
+                if(localMembers[i].memberId == member.memberId){
+                    localMembers[i].likes ++;
+                    $scope.member = localMembers[i];
                 }
             }
         localStorage.setObject('members', localMembers);
-
     };
 
     // $scope.member = localMembers
