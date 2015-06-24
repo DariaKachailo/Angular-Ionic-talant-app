@@ -11,7 +11,7 @@ talant.controller('MembersCtrl',['$scope', 'localStorage', 'getInfo','$statePara
 
     $scope.$on('$ionicView.beforeEnter', function(){
         getUser();
-    });;
+    });
 
     $scope.likes = function(member){
         var localMembers = localStorage.getObject('members');

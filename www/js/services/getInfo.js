@@ -1,4 +1,6 @@
 talant.factory('getInfo', [ '$http', '$q', function($http, $q) {
+    var LOCALHOST = 'http://localhost:3000';
+
     return {
         getProfile:  function(){
             var q = $q.defer();
@@ -80,6 +82,19 @@ talant.factory('getInfo', [ '$http', '$q', function($http, $q) {
                 q.reject(error);
             });
             return q.promise;
+        },
+
+        testRequest: function(){
+            var q = $q.defer();
+            $http({
+                method: "GET",
+                url: LOCALHOST + '/testRequest'
+            }).success(function(data){
+                q.resolve(data);
+            }).error(function(error){
+                q.reject(error);
+            });
+            return q.promise;
         }
-    }
+    };
 }]);
