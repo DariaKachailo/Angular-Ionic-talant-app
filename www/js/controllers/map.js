@@ -1,43 +1,57 @@
 talant.controller('MapCtrl', function($scope, $ionicLoading, $compile) {
 	$scope.initialize = function() {
-		var myLatlng = new google.maps.LatLng(50.4546600,30.5238000);
 
 		var mapOptions = {
-			center: myLatlng,
-			zoom: 13,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
+			zoom: 13
 		};
 
-		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+		var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-		if(navigator.geolocation) { 
+		// Try HTML5 geolocation
+		if(navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(function(position) {
 				var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-				var infowindow = new google.maps.InfoWindow({
-					map: map,
+
+				var marker = new google.maps.Marker({
 					position: pos,
-					content: 'My location'
+					map: map,
+					title: 'Here I am)'
 				});
+
 				map.setCenter(pos);
+
 			}, function() {
-				handleNoGeolocation(true);
+			  handleNoGeolocation(true);
 			});
-		} else {
-			// Browser doesn't support Geolocation
-			handleNoGeolocation(false);
+
+			} else {
+				// Browser doesn't support Geolocation
+				handleNoGeolocation(false);
+			}
+		}
+
+		function handleNoGeolocation(errorFlag) {
+			if (errorFlag) {
+				var content = 'Error: The Geolocation service failed.';
+			} else {
+				var content = 'Error: Your browser doesn\'t support geolocation.';
+			}
+
+		var options = {
+			map: map,
+			position: new google.maps.LatLng(60, 105),
+			content: content
 		};
 
-		var marker = new google.maps.Marker({
-			position: myLatlng,
-			map: map,
-			title: 'Uluru (Ayers Rock)'
-		});
+		// var infowindow = new google.maps.InfoWindow(options);
+		// map.setCenter(options.position);
+
 
 		google.maps.event.addListener(marker, 'click', function() {
 			infowindow.open(map,marker);
 		});
 
-		$scope.map = map;
+	// 	$scope.map = map;
 	}
 	google.maps.event.addDomListener(window, 'load', $scope.initialize);
 });

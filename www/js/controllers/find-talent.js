@@ -1,10 +1,10 @@
-talant.controller('FindTalentCtrl',['$scope', 'localStorage', 'getInfo', function($scope, localStorage, getInfo) {
+talant.controller('FindTalentCtrl',['$scope', 'getInfo', function($scope, getInfo) {
 
-    $scope.talents = {};
-    var localTalants = localStorage.getObject('users');
+    $scope.talents = [];
 
     getInfo.getTalents().then(function(data){
         $scope.talents = data;
-        localStorage.setObject('users', data);
     });
+
 }]);
+

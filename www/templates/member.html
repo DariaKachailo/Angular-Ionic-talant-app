@@ -4,7 +4,7 @@
 			<div class="row my_background_2">
 				<div class="col col-25 col-center">
 					<div class="profile_tab">
-					  <a class="tab-item" href="#">
+					  <a class="tab-item" ui-sref="eventmenu.chat({chatId: member.chatId})">
 					    <i class="icon ion-ios-chatbubble-outline my-icon"></i>
 					  </a>
 					</div>
@@ -35,8 +35,10 @@
 				</div>
 
 				<div class="col col-33 col-center profile_location">
-					<i class="icon ion-ios-location profile_location_icon"></i>
-					<p class="my_text">&nbsp;{{member.location_city}}, {{member.location_country}}</p>
+					<span ui-sref="eventmenu.map">
+						<i class="icon ion-ios-location profile_location_icon"></i>
+						<p class="my_text_location">&nbsp;{{member.location_city}}, {{member.location_country}}</p>
+					</span>
 				</div>
 
 				<div class="col col-33 col-center">

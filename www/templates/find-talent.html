@@ -1,27 +1,24 @@
 <ion-view view-title="Find talent">
   <ion-content class="my_background_2">
-	<div class="list">
+	<ion-list ng-init="$scope.talents">
 
-		<div class="bar bar-header item-input-inset item my_main">
+		<ion-item class="bar bar-header item-input-inset item my_main">
 			<label class="item-input-wrapper">
 				<i class="icon ion-ios-search placeholder-icon my_icon_2"></i>
-				<input type="search" placeholder="Search">
+				<input type="text" placeholder="Search" ng-model="searchText">
 			</label>
 			<button class="button button-clear my_color">
 				Find
 			</button>
-		</div>
+		</ion-item>
 
-		<div ng-repeat="user in talents" ui-sref="eventmenu.member({memberId:user.memberId})">
-		    <a class="item item-avatar item-icon-right my_item" href="#" >
-				<img class="profile_image_border" ng-src="{{user.image}}">
-				<h2 class="my_text"> {{user.talent}} </h2>
-				<p class="my_text"> {{user.location}} </p>
-				<i class="icon ion-ios-arrow-right my_icon_tomato"></i>
-		    </a>
-		</div>
-
-	</div>
+		<ion-item class="item item-avatar item-icon-right my_item" ng-repeat= "user in talents | filter:searchText" ui-sref="eventmenu.member({memberId:user.memberId})">
+			<img class="profile_image_border" ng-src="{{user.image}}">
+			<h2 class="my_text"> {{user.talent}} </h2>
+			<p class="my_text"> {{user.location}} </p>
+			<i class="icon ion-ios-arrow-right my_icon_tomato"></i>
+		</ion-item>
+	</ion-list>
 	
   </ion-content>
 </ion-view> 
