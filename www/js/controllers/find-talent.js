@@ -4,6 +4,7 @@ talant.controller('FindTalentCtrl',['$scope', 'getInfo', function($scope, getInf
 
     getInfo.getTalents().then(function(data){
         $scope.talents = data;
+        console.log(data);
     });
 
 }]);

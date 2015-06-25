@@ -1,6 +1,6 @@
 [
     { 
-        "memberId": "0",
+        "id": "0",
         "firstName": "Stanislav",
         "lastName": "Dzhus",
         "image": "img/profile-1.png",
@@ -10,7 +10,7 @@
         "specialization": "Back off, man. I'm a blablabla.",
         "likes": "38"
     },{ 
-    	"memberId": "1",
+    	"id": "1",
         "firstName": "Eugene",
         "lastName": "Slavnuj",
         "image": "img/profile-2.png",
@@ -20,7 +20,7 @@
         "specialization": "My talent is doebuvalsja.",
         "likes": "358"
     },{
-    	"memberId": "2",
+    	"id": "2",
         "firstName": "Sveta",
         "lastName": "Titova",
         "image": "img/profile-3.png",
@@ -30,7 +30,7 @@
         "specialization": "Tra-ta-ta",
         "likes": "93"
     },{
-    	"memberId": "3",
+    	"id": "3",
         "firstName": "Daria",
         "lastName": "Lipovenko",
         "image": "img/profile-4.png",
@@ -40,7 +40,7 @@
         "specialization": "Ass-ASss-Assss))) My ass is harder than any nut",
         "likes": "963"
     },{ 
-    	"memberId": "4",
+    	"id": "4",
         "firstName": "Bogdan",
         "lastName": "Tkachyk",
         "image": "img/profile-5.png",
@@ -50,7 +50,7 @@
         "specialization": "I can make joint even if I'm sleepling",
         "likes": "9063"
     },{
-    	"memberId": "5",
+    	"id": "5",
         "firstName": "Ljubava",
         "lastName": "Petriv",
         "image": "img/profile-6.png",
@@ -60,17 +60,17 @@
         "specialization": "Back off, man.",
         "likes": "203"
     },{
-    	"memberId": "6",
+    	"id": "6",
         "firstName": "Sofia",
         "lastName": "Borusko",
         "image": "img/profile-7.png",
         "location_city": "Podil",
         "location_country": "Ukraine",
         "talent": "Bachacha",
-        "specialization": " can dance bachacha, better then God.",
+        "specialization": "I can dance bachacha, better then God.",
         "likes": "289"
     },{
-    	"memberId": "7",
+    	"id": "7",
         "firstName": "Daria",
         "lastName": "Kachailo",
         "image": "img/img-profile.jpg",
@@ -80,7 +80,7 @@
         "specialization": "My talant is so F*cking Awesome! I can twerk like nigga! ahahah)))",
         "likes": "2309"
     },{
-    	"memberId": "8",
+    	"id": "8",
         "firstName": "Alena",
         "lastName": "Kostenko",
         "image": "img/profile-8.png",
@@ -91,3 +91,104 @@
         "likes": "479"
     }
 ]
+
+
+// {
+//     "_id" : ObjectId("558c6038a593952fb9f6c5be"),
+//     "id" : 1,
+//     "firstName" : "Stanislav",
+//     "secondName" : "Dzhus",
+//     "locationCity" : "Romankiv",
+//     "locationCountry" : "Ukraine",
+//     "talent" : "Zzzzanuda",
+//     "specialization" : "Back off, man. I'm a blablabla.",
+//     "likes" : 789
+// }
+// {
+//     "_id" : ObjectId("558c6152a593952fb9f6c5bf"),
+//     "id" : 2,
+//     "firstName" : "Daria",
+//     "secondName" : "Kachailo",
+//     "locationCity" : "Kiev",
+//     "locationCountry" : "Ukraine",
+//     "talent" : "Twerking",
+//     "specialization" : "My talant is so F*cking Awesome! I can twerk like nigga! ahahah)))",
+//     "likes" : 384
+// }
+// {
+//     "_id" : ObjectId("558c6179a593952fb9f6c5c0"),
+//     "id" : 3,
+//     "firstName" : "Alena",
+//     "secondName" : "Kostenko",
+//     "locationCity" : "Rotterdam",
+//     "locationCountry" : "Netherlands",
+//     "talent" : "Be friendly)",
+//     "specialization" : "My talant is so F*cking Awesome!)))",
+//     "likes" : 3284
+// }
+// {
+//     "_id" : ObjectId("558c6179a593952fb9f6c5c1"),
+//     "id" : 4,
+//     "firstName" : "Eugene",
+//     "secondName" : "Slavnuj",
+//     "locationCity" : "Obolon",
+//     "locationCountry" : "Ukraine",
+//     "talent" : "DoEbuvatsja",
+//     "specialization" : "My talent is doebuvalsja.",
+//     "likes" : 2184
+// }
+// {
+//     "_id" : ObjectId("558c6179a593952fb9f6c5c2"),
+//     "id" : 5,
+//     "firstName" : "Sveta",
+//     "secondName" : "Titova",
+//     "locationCity" : "Pechersk",
+//     "locationCountry" : "Ukraine",
+//     "talent" : "Ebat mozg)",
+//     "specialization" : "Tra-ta-tav",
+//     "likes" : 184
+// }
+// {
+//     "_id" : ObjectId("558c6179a593952fb9f6c5c3"),
+//     "id" : 6,
+//     "firstName" : "Daria",
+//     "secondName" : "Lipovenko",
+//     "locationCity" : "Obolon",
+//     "locationCountry" : "Ukraine",
+//     "talent" : "Booty shake",
+//     "specialization" : "Tra-ta-tav",
+//     "likes" : 963
+// }
+// {
+//     "_id" : ObjectId("558c6179a593952fb9f6c5c4"),
+//     "id" : 7,
+//     "firstName" : "Bogdan",
+//     "secondName" : "Tkachyk",
+//     "locationCity" : "Obolon",
+//     "locationCountry" : "Ukraine",
+//     "talent" : "Make joint",
+//     "specialization" : "I can make joint even if I\"m sleepling",
+//     "likes" : 9063
+// }
+// {
+//     "_id" : ObjectId("558c6179a593952fb9f6c5c5"),
+//     "id" : 8,
+//     "firstName" : "Ljubava",
+//     "secondName" : "Petriv",
+//     "locationCity" : "Poznan",
+//     "locationCountry" : "Poland",
+//     "talent" : "Make haos",
+//     "specialization" : "Back off, man.",
+//     "likes" : 123
+// }
+// {
+//     "_id" : ObjectId("558c6179a593952fb9f6c5c6"),
+//     "id" : 9,
+//     "firstName" : "Sofia",
+//     "secondName" : "Borusko",
+//     "locationCity" : "Lviv",
+//     "locationCountry" : "Ukraine",
+//     "talent" : "Bachacha",
+//     "specialization" : "I can dance bachacha, better then God.",
+//     "likes" : 1239
+// }
