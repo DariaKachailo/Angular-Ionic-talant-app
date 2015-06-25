@@ -46,20 +46,20 @@ talant.controller('ChatCtrl', ['$scope', '$rootScope', '$state', '$stateParams',
       }, 20000);
     });
 
-    // $scope.$on('$ionicView.leave', function() {
-    //   // console.log('leaving UserMessages view, destroying interval');
-    //   // Make sure that the interval is destroyed
-    //   if (angular.isDefined(messageCheckTimer)) {
-    //     $interval.cancel(messageCheckTimer);
-    //     messageCheckTimer = undefined;
-    //   }
-    // });
+    $scope.$on('$ionicView.leave', function() {
+      // console.log('leaving UserMessages view, destroying interval');
+      // Make sure that the interval is destroyed
+      if (angular.isDefined(messageCheckTimer)) {
+        $interval.cancel(messageCheckTimer);
+        messageCheckTimer = undefined;
+      }
+    });
 
-    // $scope.$on('$ionicView.beforeLeave', function() {
-    //   if (!$scope.input.message || $scope.input.message === '') {
-    //     localStorage.removeItem('userMessage-' + $scope.toUser._id);
-    //   }
-    // });
+    $scope.$on('$ionicView.beforeLeave', function() {
+      if (!$scope.input.message || $scope.input.message === '') {
+        localStorage.removeItem('userMessage-' + $scope.toUser._id);
+      }
+    });
 
     function getMessages() {
       // the service is mock but you would probably pass the toUser's GUID here

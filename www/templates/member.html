@@ -35,10 +35,14 @@
 				</div>
 
 				<div class="col col-33 col-center profile_location">
-					<span ui-sref="eventmenu.map">
-						<i class="icon ion-ios-location profile_location_icon"></i>
-						<p class="my_text_location">&nbsp;{{member.location_city}}, {{member.location_country}}</p>
-					</span>
+					<div ui-sref="eventmenu.map">
+						<div class="left_location">
+							<i class="icon ion-ios-location profile_location_icon"></i>
+						</div>
+						<div class="right_location">
+							<p class="my_text_location">&nbsp;{{member.location_city}}, {{member.location_country}}</p>
+						</div>
+					</div>
 				</div>
 
 				<div class="col col-33 col-center">

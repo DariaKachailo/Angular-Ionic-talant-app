@@ -54,7 +54,7 @@
 }
 
 .item_bg a {
-  background-color: #C0BDB8 !important;
+	background-color: #C0BDB8 !important;
 }
 
 .bar-stable .button.button-clear {
@@ -68,6 +68,10 @@
 	-webkit-justify-content: center;
 }
 
+.pane {
+	background-color: #373d4a !important;
+}
+
 hr {
 	margin-bottom: -1px;
 }
@@ -76,7 +80,7 @@ a {
 	text-decoration: none;
 }
 
-/* Profile Page */
+/* Profile/Member Page */
 
 .profile_tab {
 	width: 50px;
@@ -117,9 +121,10 @@ a {
 }
 
 .profile_location_icon {
-	font-size: 14px;
+	font-size: 25px;
 	margin-right: 2px;
 	color: #9D8C70;
+	margin-top: 7px;
 }
 
 .my_like_icon {
@@ -145,6 +150,25 @@ a {
 .my_text_location {
 	color: #373d4a;
 	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 16px;
+}
+
+.right_location {
+	width:85%;
+	position:relative;
+	float:right;
+	display: flex;
+	display: -webkit-flex;
+}
+
+.left_location {
+	width:15%;
+	position:relative;
+	float:left;
+	display: flex;
+	display: -webkit-flex;
 }
 
 
