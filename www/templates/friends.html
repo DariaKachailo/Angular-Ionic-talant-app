@@ -2,7 +2,7 @@
 	<ion-content class="my_background_2">
 		<div class="row friends_row">
 
-			<div class="col col-33" ng-repeat="friend in members" ui-sref="eventmenu.member({memberId: friend.memberId})">
+			<div class="col col-33" ng-repeat="friend in members" ui-sref="eventmenu.member({id: friend.id})">
 				<div class="friend">
 					<a href="#" >
 						<img class="profile_image_border my_size" ng-src="{{friend.image}}">

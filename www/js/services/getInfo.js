@@ -6,7 +6,7 @@ talant.factory('getInfo', [ '$http', '$q', function($http, $q) {
             var q = $q.defer();
             $http({
                 method: "GET",
-                url: './data/profile.json'
+                url: LOCALHOST + '/getProfile'
             }).success(function(data){
                 q.resolve(data);
             }).error(function(error){
@@ -19,7 +19,7 @@ talant.factory('getInfo', [ '$http', '$q', function($http, $q) {
             var q = $q.defer();
             $http({
                 method: "GET",
-                url: './data/users.json'
+                url: LOCALHOST + '/getTalents'
             }).success(function(data){
                 q.resolve(data);
             }).error(function(error){
@@ -32,7 +32,7 @@ talant.factory('getInfo', [ '$http', '$q', function($http, $q) {
             var q = $q.defer();
             $http({
                 method: "GET",
-                url: './data/members.json'
+                url: LOCALHOST + '/getMembers'
             }).success(function(data){
                 q.resolve(data);
             }).error(function(error){
@@ -45,13 +45,9 @@ talant.factory('getInfo', [ '$http', '$q', function($http, $q) {
             var q = $q.defer();
             $http({
                 method: "GET",
-                url: './data/members.json'
+                url: LOCALHOST + '/getMember/' + id
             }).success(function(data){
-                for (var i = 0; i < data.length; i++) {
-                    if (data[i].memberId == id) {
-                        q.resolve(data[i]);
-                    }
-                }
+                q.resolve(data);
             }).error(function(error){
                 q.reject(error);
             });
@@ -82,19 +78,21 @@ talant.factory('getInfo', [ '$http', '$q', function($http, $q) {
                 q.reject(error);
             });
             return q.promise;
-        },
-
-        testRequest: function(){
-            var q = $q.defer();
-            $http({
-                method: "GET",
-                url: LOCALHOST + '/testRequest'
-            }).success(function(data){
-                q.resolve(data);
-            }).error(function(error){
-                q.reject(error);
-            });
-            return q.promise;
         }
+        // }, 
+
+        // like: function(){
+        //     var q = $q.defer();
+        //     console.log(id);
+        //     $http({
+        //         method: "POST",
+        //         url: LOCALHOST + '/member/like'
+        //     }).success(function(data){
+        //         q.resolve(data);
+        //     }).error(function(error){
+        //         q.reject(error);
+        //     });
+        //     return q.promise;
+        // }
     };
 }]);

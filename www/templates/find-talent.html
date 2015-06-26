@@ -12,10 +12,10 @@
 			</button>
 		</div>
 
-		<div class="item item-avatar item-icon-right my_item" ng-repeat= "user in talents | filter:searchText" ui-sref="eventmenu.member({memberId:user.memberId})">
+		<div class="item item-avatar item-icon-right my_item" ng-repeat= "user in talents | filter:searchText" ui-sref="eventmenu.member({id:user.id})">
 			<img class="profile_image_border" ng-src="{{user.image}}">
 			<h2 class="my_text"> {{user.talent}} </h2>
-			<p class="my_text"> {{user.location}} </p>
+			<p class="my_text"> {{user.locationCity}}, {{user.locationCountry}}</p>
 			<i class="icon ion-ios-arrow-right my_icon_tomato"></i>
 		</div>
 	</ion-list>

@@ -5,8 +5,4 @@ talant.controller('ProfileCtrl',['$scope', 'getInfo', function($scope, getInfo) 
     getInfo.getProfile().then(function(data){
         $scope.profile = data;
     });
-
-    getInfo.testRequest().then(function(data){ //test request
-        console.log(data);
-    });
 }]);

@@ -74,7 +74,7 @@ var talant = angular.module('starter', ['ionic'])
 	})
 
 	.state('eventmenu.member', {
-		url: "/member/:memberId",
+		url: "/member/:id",
 		views: {
 			'menuContent': {
 				templateUrl: "templates/member.html",
